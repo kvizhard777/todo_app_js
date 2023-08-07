@@ -1,0 +1,26 @@
+@import './reset.scss';
+@import './vars.scss';
+@import './style.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  color: $white;
+  background-color: $backgroundColor;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  max-width: $containerWidth;
+  margin: auto;
+}
+
+.delete {
+  color: $deleteBtn;
+}
+
+.checked {
+  .todo__block-text {
+    color: $gray;
+    text-decoration: line-through;
+  }
+}

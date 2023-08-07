@@ -1,0 +1,122 @@
+// Wrapper
+.wrapper {
+  padding: 30px;
+}
+
+// Title
+.title {
+  margin-top: 45px;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  font-family: 'Oswald', sans-serif;
+}
+
+// Todo
+.todo {
+  width: 650px;
+
+  margin-top: 60px;
+  padding: 35px;
+  border-radius: 30px;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $black;
+
+  // Todo Add
+  &__add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    // Todo Add Input
+    &-input {
+      width: 450px;
+      padding: 15px;
+      border-radius: 15px;
+
+      font-size: 18px;
+      font-weight: 500;
+
+      background-color: $blockColor;
+    }
+
+    // Todo Add Btn
+    &-btn {
+      padding: 15px 35px;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      border-radius: 15px;
+
+      background-color: $btnColor;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        background-color: $btnColorDark;
+      }
+    }
+  }
+
+  // Todo Blocks
+  &__blocks {
+    width: 650px;
+    margin-top: 50px;
+  }
+
+  // Todo List
+  &__list {
+    display: grid;
+    gap: 15px;
+  }
+
+  // Todo Block
+  &__block {
+    padding: 25px 35px;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    background-color: $blockColor;
+
+    // Todo Block Wrapper
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    // Todo Block Text
+    &-text {
+      max-width: 375px;
+
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    // Todo Block Btns
+    &-btns {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    // Todo Block Btn
+    &-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      font-weight: 600;
+    }
+  }
+}
